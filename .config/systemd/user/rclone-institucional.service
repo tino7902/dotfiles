@@ -1,0 +1,17 @@
+[Unit]
+Description=Google Drive Personal (Rclone)
+AssertPathIsDirectory=/home/tino/GoogleDrive-Institucional
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rclone mount drive-institucional: /home/tino/GoogleDrive-Institucional/ \
+    --vfs-cache-mode full \
+    --vfs-cache-max-size 10G \
+    --vfs-cache-max-age 24h
+ExecStop=/bin/fusermount -u /home/tino/GoogleDrive-Institucional
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

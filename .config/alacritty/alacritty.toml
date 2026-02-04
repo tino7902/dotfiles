@@ -1,0 +1,15 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/noctalia.toml"
+]
+
+[window]
+blur = true
+opacity = 0.9
+
+[font]
+normal = { family = "0xProto Nerd Font Mono", style = "normal" }
+size = 14
+
+[selection]
+save_to_clipboard = true
