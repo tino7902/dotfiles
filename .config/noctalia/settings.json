@@ -59,13 +59,13 @@
         "widgets": {
             "center": [
                 {
+                    "clockColor": "none",
                     "customFont": "",
                     "formatHorizontal": "HH:mm - dd/MM/yyyy",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
                     "tooltipFormat": "HH:mm:ss - dddd, MMMM dd yyyy",
-                    "useCustomFont": false,
-                    "usePrimaryColor": false
+                    "useCustomFont": false
                 }
             ],
             "left": [
@@ -148,15 +148,6 @@
             "right": [
                 {
                     "defaultSettings": {
-                        "currentIconName": "world-download",
-                        "hideOnZero": false,
-                        "updateIntervalMinutes": 30,
-                        "updateTerminalCommand": "foot -e"
-                    },
-                    "id": "plugin:update-count"
-                },
-                {
-                    "defaultSettings": {
                         "autoHeight": true,
                         "cheatsheetData": [
                         ],
@@ -177,8 +168,7 @@
                     "hideIfNotDetected": true,
                     "id": "Battery",
                     "showNoctaliaPerformance": false,
-                    "showPowerProfiles": false,
-                    "warningThreshold": 30
+                    "showPowerProfiles": false
                 },
                 {
                     "displayMode": "onhover",

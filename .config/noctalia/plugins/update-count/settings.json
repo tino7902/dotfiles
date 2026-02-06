@@ -1,8 +1,0 @@
-{
-  "updateIntervalMinutes": 60,
-  "updateTerminalCommand": "foot -e",
-  "currentIconName": "world-download",
-  "hideOnZero": true,
-  "customCmdGetNumUpdates": "",
-  "customCmdDoSystemUpdate": ""
-}
