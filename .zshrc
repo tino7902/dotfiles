@@ -107,3 +107,5 @@ alias ls='eza --hyperlink --icons --group-directories-first --no-quotes -a -1'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 eval "$(zoxide init --cmd cd bash)"
 eval "$(starship init zsh)"
+
+. "$HOME/.local/share/../bin/env"

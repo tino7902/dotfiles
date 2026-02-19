@@ -1,7 +1,7 @@
 {
   "cheatsheetData": [
     {
-      "title": "Mod",
+      "title": "Applications",
       "binds": [
         {
           "keys": "Super + Shift + Slash",
@@ -10,6 +10,10 @@
         {
           "keys": "Super + Return",
           "desc": "Open a Terminal: alacritty"
+        },
+        {
+          "keys": "Super + C",
+          "desc": "Open a Code Editor: VSCode"
         },
         {
           "keys": "Super + B",
@@ -30,7 +34,7 @@
       ]
     },
     {
-      "title": "-l 1.0",
+      "title": "Window Management",
       "binds": [
         {
           "keys": "Super + Left",
@@ -38,30 +42,14 @@
         },
         {
           "keys": "Super + Down",
-          "desc": "Focus Window Down"
+          "desc": "Focus Window Or Workspace Down"
         },
         {
           "keys": "Super + Up",
-          "desc": "Focus Window Up"
+          "desc": "Focus Window Or Workspace Up"
         },
         {
           "keys": "Super + Right",
-          "desc": "Focus Column Right"
-        },
-        {
-          "keys": "Super + H",
-          "desc": "Focus Column Left"
-        },
-        {
-          "keys": "Super + J",
-          "desc": "Focus Window Down"
-        },
-        {
-          "keys": "Super + K",
-          "desc": "Focus Window Up"
-        },
-        {
-          "keys": "Super + L",
           "desc": "Focus Column Right"
         },
         {
@@ -70,31 +58,15 @@
         },
         {
           "keys": "Super + Ctrl + Down",
-          "desc": "Move Window Down"
+          "desc": "Move Window Down Or To Workspace Down"
         },
         {
           "keys": "Super + Ctrl + Up",
-          "desc": "Move Window Up"
+          "desc": "Move Window Up Or To Workspace Up"
         },
         {
           "keys": "Super + Ctrl + Right",
           "desc": "Move Column Right"
-        },
-        {
-          "keys": "Super + Home",
-          "desc": "Focus Column First"
-        },
-        {
-          "keys": "Super + End",
-          "desc": "Focus Column Last"
-        },
-        {
-          "keys": "Super + Ctrl + Home",
-          "desc": "Move Column To First"
-        },
-        {
-          "keys": "Super + Ctrl + End",
-          "desc": "Move Column To Last"
         },
         {
           "keys": "Super + Shift + Left",
@@ -137,14 +109,6 @@
           "desc": "Focus Workspace Up"
         },
         {
-          "keys": "Super + U",
-          "desc": "Focus Workspace Down"
-        },
-        {
-          "keys": "Super + I",
-          "desc": "Focus Workspace Up"
-        },
-        {
           "keys": "Super + Ctrl + Page_Down",
           "desc": "Move Column To Workspace Down"
         },
@@ -153,27 +117,11 @@
           "desc": "Move Column To Workspace Up"
         },
         {
-          "keys": "Super + Ctrl + U",
-          "desc": "Move Column To Workspace Down"
-        },
-        {
-          "keys": "Super + Ctrl + I",
-          "desc": "Move Column To Workspace Up"
-        },
-        {
           "keys": "Super + Shift + Page_Down",
           "desc": "Move Workspace Down"
         },
         {
           "keys": "Super + Shift + Page_Up",
-          "desc": "Move Workspace Up"
-        },
-        {
-          "keys": "Super + Shift + U",
-          "desc": "Move Workspace Down"
-        },
-        {
-          "keys": "Super + Shift + I",
           "desc": "Move Workspace Up"
         },
         {
@@ -211,7 +159,7 @@
       ]
     },
     {
-      "title": "best effort",
+      "title": "Workspace Management",
       "binds": [
         {
           "keys": "Super + 1",
@@ -326,12 +274,8 @@
           "desc": "Expand Column To Available Width"
         },
         {
-          "keys": "Super + C",
+          "keys": "Super + Shift + C",
           "desc": "Center Column"
-        },
-        {
-          "keys": "Super + Ctrl + C",
-          "desc": "Center Visible Columns"
         },
         {
           "keys": "Super + A",
@@ -389,5 +333,6 @@
   "modKeyVariable": "$mod",
   "windowHeight": 850,
   "windowWidth": 1400,
-  "detectedCompositor": "niri"
+  "detectedCompositor": "niri",
+  "columnCount": 4
 }

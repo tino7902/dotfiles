@@ -1,0 +1,26 @@
+{
+  "thumbCacheReady": true,
+  "enabled": true,
+  "activeBackend": "mpvpaper",
+  "currentWallpaper": "/home/tino/Pictures/Wallpapers/wallpaper_drake_video.mp4",
+  "volume": 1,
+  "wallpapersFolder": "~/Pictures/Wallpapers",
+  "automation": false,
+  "automationCustomTime": [],
+  "automationMode": "random",
+  "automationTime": 300,
+  "hardwareAcceleration": false,
+  "mpvSocket": "/tmp/mpv-socket",
+  "profile": "default",
+  "fillMode": "fit",
+  "orientation": 0,
+  "oldWallpapers": {
+    "HDMI-A-1": "/home/tino/Pictures/Wallpapers/wallpaper.jpg",
+    "eDP-1": "/home/tino/Pictures/Wallpapers/wallpaper.jpg"
+  },
+  "isPlaying": true,
+  "isMuted": false,
+  "eDP-1": {
+    "isPlaying": true
+  }
+}
