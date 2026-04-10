@@ -1,18 +1,18 @@
 {
-  "thumbCacheReady": true,
-  "enabled": true,
   "activeBackend": "mpvpaper",
-  "currentWallpaper": "/home/tino/Pictures/Wallpapers/wallpaper_drake_video.mp4",
-  "volume": 1,
-  "wallpapersFolder": "~/Pictures/Wallpapers",
-  "automation": false,
-  "automationCustomTime": [],
   "automationMode": "random",
   "automationTime": 300,
-  "hardwareAcceleration": false,
+  "fillMode": "fit",
   "mpvSocket": "/tmp/mpv-socket",
   "profile": "default",
-  "fillMode": "fit",
+  "volume": 1,
+  "wallpapersFolder": "~/Pictures/Wallpapers",
+  "thumbCacheReady": true,
+  "enabled": true,
+  "currentWallpaper": "/home/tino/Pictures/Wallpapers/wallpaper_drake_video.mp4",
+  "automation": false,
+  "automationCustomTime": [],
+  "hardwareAcceleration": false,
   "orientation": 0,
   "oldWallpapers": {
     "HDMI-A-1": "/home/tino/Pictures/Wallpapers/wallpaper.jpg",
@@ -21,6 +21,29 @@
   "isPlaying": true,
   "isMuted": false,
   "eDP-1": {
-    "isPlaying": true
-  }
+    "isPlaying": true,
+    "currentWallpaper": "",
+    "volume": 1,
+    "automation": false,
+    "automationMode": "random",
+    "automationTime": 300,
+    "hardwareAcceleration": false,
+    "profile": "default",
+    "fillMode": "",
+    "orientation": 0
+  },
+  "HDMI-A-1": {
+    "isPlaying": true,
+    "currentWallpaper": "",
+    "volume": 1,
+    "automation": false,
+    "automationMode": "random",
+    "automationTime": 300,
+    "hardwareAcceleration": false,
+    "profile": "default",
+    "fillMode": "",
+    "orientation": 0
+  },
+  "monitorSpecific": false
 }
+

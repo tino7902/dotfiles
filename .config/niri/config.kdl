@@ -16,7 +16,7 @@ input {
 
             // For example:
             layout "us,latam"
-            options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+            options "grp:win_space_toggle,compose:ralt"
 
             // If this section is empty, niri will fetch xkb settings
             // from org.freedesktop.locale1. You can control these using
@@ -121,7 +121,7 @@ layout {
     // - "always", the focused column will always be centered.
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
-    center-focused-column "never"
+    center-focused-column "on-overflow"
 
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
@@ -271,6 +271,7 @@ layout {
 
 spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "thunar" "--daemon"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -324,7 +325,15 @@ window-rule {
     opacity 0.85
 }
 
+window-rule {
+    match app-id="zen"
+
+    opacity 1.0
+}
+
 binds {
+    // control center
+    Mod+Tab{ spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
     // keybind-cheatsheet
     Mod+Shift+Slash { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin" "togglePanel" "keybind-cheatsheet"; }
 

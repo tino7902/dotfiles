@@ -24,9 +24,9 @@ Item {
     required property FolderModel thumbFolderModel
 
     // Global properties
-    readonly property bool   enabled:          pluginApi?.pluginSettings?.enabled          || false
-    readonly property bool   thumbCacheReady:  pluginApi?.pluginSettings?.thumbCacheReady  || false
-    readonly property string wallpapersFolder: pluginApi?.pluginSettings?.wallpapersFolder || pluginApi?.manifest?.metadata?.defaultSettings?.wallpapersFolder || ""
+    readonly property bool   enabled:          pluginApi?.pluginSettings?.enabled          ?? false
+    readonly property bool   thumbCacheReady:  pluginApi?.pluginSettings?.thumbCacheReady  ?? false
+    readonly property string wallpapersFolder: pluginApi?.pluginSettings?.wallpapersFolder ?? pluginApi?.manifest?.metadata?.defaultSettings?.wallpapersFolder ?? ""
 
     // Local properties
     property bool oldWallpapersSaved: false
@@ -72,7 +72,7 @@ Item {
 
                 // With scale
                 //thumbProc.command = ["sh", "-c", `ffmpeg -y -i ${videoUrl} -vf "scale=1080:-1" -vframes:v 1 ${thumbUrl}`]
-                thumbGenerationProc.command = ["sh", "-c", `ffmpeg -y -i "${videoPath}" -vframes:v 1 "${thumbPath}"`]
+                thumbGenerationProc.command = ["sh", "-c", `ffmpeg -y -i "${videoPath}" -vf "scale=iw/2:-1, format=rgb24" -vframes:v 1 "${thumbPath}"`]
                 thumbGenerationProc.running = true;
                 return;
             }

@@ -20,12 +20,12 @@ Item {
     required property FolderModel thumbFolderModel
 
     // Monitor specific properties
-    readonly property string currentWallpaper:  pluginApi?.pluginSettings?.[screenName]?.currentWallpaper  || ""
-    readonly property string noctaliaWallpaper: pluginApi?.pluginSettings?.[screenName]?.noctaliaWallpaper || ""
+    readonly property string currentWallpaper:  pluginApi?.pluginSettings?.[screenName]?.currentWallpaper  ?? ""
+    readonly property string noctaliaWallpaper: pluginApi?.pluginSettings?.[screenName]?.noctaliaWallpaper ?? ""
 
     // Global properties
-    readonly property bool enabled:         pluginApi?.pluginSettings?.enabled         || false
-    readonly property bool thumbCacheReady: pluginApi?.pluginSettings?.thumbCacheReady || false
+    readonly property bool enabled:         pluginApi?.pluginSettings?.enabled         ?? false
+    readonly property bool thumbCacheReady: pluginApi?.pluginSettings?.thumbCacheReady ?? false
 
     // Signals
     signal oldWallpapersSaved
@@ -42,7 +42,8 @@ Item {
             return;
         }
 
-        const noctaliaWallpaper = WallpaperService.currentWallpapers[root.screenName];
+        const mode = Settings.data.colorSchemes.darkMode ? "dark" : "light";
+        const noctaliaWallpaper = WallpaperService.currentWallpapers[root.screenName][mode];
 
         // Check if the wallpaper name is VERY similar to how the thumbnail generation works,
         // aka if the last characters are ".extension.bmp", in that case just don't do anything, just as a fail safe.
